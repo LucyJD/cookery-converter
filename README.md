@@ -28,7 +28,7 @@ Event handler 'on click' of Clear button will reset the form to its initial stat
     * Conversions between weight and volume which requires you to know the ingredient - could do for a range of common ingredients, e.g. standard dry baking ingredients like flour, sugar, etc.
         * cups
         * tablespoons?
-      * Oven temperatures
+    * Oven temperatures
         * Celsius
         * Celsius (fan)
         * Fahrenheit
