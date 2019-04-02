@@ -6,9 +6,46 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body>
+    <div class="content">
+      <h1>Cookery Converter</h1>
 
-  <h1>Title</h1>
+      <form id="conversion-form" name="conversion-form">
+      
+      <label for="fromUnits">From:</label>
+      <select id="from-select" name="fromUnits">
+        <option data-type="weight" value="fromLbOz">Pounds/Ounces</option>
+        <option data-type="weight" value="fromKgG">Kilograms/Grams</option>
+        <option data-type="volume" value="fromPintsUK">Pints (UK)</option>
+        <option data-type="volume" value="fromFluidOzUK">Fluid Ounces (UK)</option>
+        <option data-type="volume" value="fromPintsUS">Pints (US)</option>
+        <option data-type="volume" value="fromFluidOzUS">Fluid Ounces (US)</option>
+        <option data-type="volume" value="fromLitresMl">Litres/Millilitres</option>
+      </select>
 
+      <div id="big-quantity-input">
+        <label for="big-units-quantity">Pounds(lbs):</label>
+        <input type="number" id="big-units-quantity" name="big-units-quantity">
+      </div>
+
+      <div id="small-quantity-input">
+        <label for="small-units-quantity">Ounces(oz):</label>
+        <input type="number" id="small-units-quantity" name="small-units-quantity">
+      </div>
+
+      <label for="toUnits">To:</label>
+      <select id="to-select" name="toUnits">
+        <option data-type="weight" value="toLbOz">Pounds/Ounces</option>
+        <option data-type="weight" value="toKgG">Kilograms/Grams</option>
+        <option data-type="volume" value="toPintsUK">Pints (UK)</option>
+        <option data-type="volume" value="toPintsUS">Pints (US)</option>
+        <option data-type="volume" value="toFluidOz">Fluid Ounces</option>
+        <option data-type="volume" value="toLitresMl">Litres/Millilitres</option>
+      </select>
+      
+      <button type="button" form="conversion-form" value="Submit" id="convert">Convert</button>
+
+      </form>
+    </div>
 </body>
 <script src="app.js"></script>
 </html>
