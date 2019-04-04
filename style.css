@@ -1,3 +1,27 @@
-#toUnitsWeight, #toUnitsVolume {
-    display: none;
+#from-dropdown, #big-quantity-input, #small-quantity-input {
+    float: left;
+}
+
+#to-dropdown {
+    float: none;
+}
+
+#from-dropdown, #big-quantity-input, #small-quantity-input, #to-dropdown {
+    padding: 10px;
+}
+
+button#convert {
+    background: red;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+button#convert:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    margin: auto;
 }

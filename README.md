@@ -11,6 +11,16 @@ Event handler 'on click' of Convert button will do some validation on quantity e
 
 Event handler 'on click' of Clear button will reset the form to its initial state.
 
+// TO DO:
+// - validate user input
+// - complete conversion functions
+// - improve accessibility of forms
+// - style layout
+// - present results
+// - make it clear any quantities entered if user changes the to dropdown
+// - add clear button
+// - add support for further units/conversions and enhancements from readme
+
 **Stage 2: Create a Gutenberg block to allow the converter from Stage 1 to be inserted anywhere in a page or post**
 
 ???

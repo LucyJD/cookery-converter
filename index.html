@@ -11,16 +11,11 @@
 
       <form id="conversion-form" name="conversion-form">
       
-      <label for="fromUnits">From:</label>
-      <select id="from-select" name="fromUnits">
-        <option data-type="weight" value="fromLbOz">Pounds/Ounces</option>
-        <option data-type="weight" value="fromKgG">Kilograms/Grams</option>
-        <option data-type="volume" value="fromPintsUK">Pints (UK)</option>
-        <option data-type="volume" value="fromFluidOzUK">Fluid Ounces (UK)</option>
-        <option data-type="volume" value="fromPintsUS">Pints (US)</option>
-        <option data-type="volume" value="fromFluidOzUS">Fluid Ounces (US)</option>
-        <option data-type="volume" value="fromLitresMl">Litres/Millilitres</option>
-      </select>
+      <div id="from-dropdown">
+        <label for="fromUnits">From:</label>
+        <select id="from-select" name="fromUnits">
+        </select>
+      </div>
 
       <div id="big-quantity-input">
         <label for="big-units-quantity">Pounds(lbs):</label>
@@ -32,20 +27,19 @@
         <input type="number" id="small-units-quantity" name="small-units-quantity">
       </div>
 
-      <label for="toUnits">To:</label>
-      <select id="to-select" name="toUnits">
-        <option data-type="weight" value="toLbOz">Pounds/Ounces</option>
-        <option data-type="weight" value="toKgG">Kilograms/Grams</option>
-        <option data-type="volume" value="toPintsUK">Pints (UK)</option>
-        <option data-type="volume" value="toPintsUS">Pints (US)</option>
-        <option data-type="volume" value="toFluidOz">Fluid Ounces</option>
-        <option data-type="volume" value="toLitresMl">Litres/Millilitres</option>
-      </select>
+      <div id="to-dropdown">
+        <label for="toUnits">To:</label>
+        <select id="to-select" name="toUnits">
+        </select>
+      </div>
       
-      <button type="button" form="conversion-form" value="Submit" id="convert">Convert</button>
+    </form>
 
-      </form>
+    <button type="button" form="conversion-form" value="Submit" id="convert">Convert</button>
+
     </div>
 </body>
+<script src="form-display.js"></script>
+<script src="conversions.js"></script>
 <script src="app.js"></script>
 </html>
